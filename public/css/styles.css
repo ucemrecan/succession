@@ -1,0 +1,175 @@
+body {
+    background-image: url("background.jpeg");
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.heading {
+    flex-grow: 1;
+    width: 10rem;
+    padding-top: 5%;
+    padding-left: 35%;
+}
+
+
+/* SUCCESSION */
+.movie-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 2px 2px black; 
+    letter-spacing: 8px;
+    margin-bottom: 0;
+    margin-top: 4.5rem;
+}
+
+/* IMDB */
+.imdb-score {
+    text-align: right;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.imdb-p {
+    color: #F3CE13;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 0;
+    display: inline;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.imdb-logo {
+    width: 65px;
+    height: 55px;
+    margin: 0 15px;
+    display: inline;
+}
+
+/* INFO */
+.info-p {
+    display: inline;
+    color: gray;
+    opacity: 0.5;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.icons {
+    width: 16px;
+    height: 16px;
+}
+
+/* SUMMARY */
+.summary-p {
+    font-size: 1.2rem;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* STARS */
+.stars-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #F3CE13;
+    display: inline;
+}
+
+.stars-p {
+    display: inline;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+
+/* IMAGES */
+.images {
+    margin-top: 1rem;
+    width: 118px;
+    height: 142px;
+    margin-right: 2rem;
+    border-radius: 15px;
+}
+
+
+/* PLAY BUTTON */
+.play {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #F3CE13;
+    border-radius: 3rem;
+    width: 12rem;
+    height: 4rem;
+    color: #F3CE13;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #F3CE13;
+    color: gray;
+}
+
+.btn:hover .play-btn {
+    color: gray;
+}
+
+.play-btn {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 3% 5%;
+        flex-direction: column-reverse;
+    }
+    
+    .heading {
+        width: auto;
+        padding-left: 0;
+        justify-content: center;
+
+    }
+
+    .play {
+        margin-top: 2rem;
+    }
+    
+    .imdb-score {
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .imdb-p {
+        left: 0;
+    }
+
+    .imdb-logo {
+        position: absolute;
+        left: 100px;
+    }
+
+  }
